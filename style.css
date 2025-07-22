@@ -130,7 +130,7 @@ z-index: 1;
     }
     #div33{
         text-align: center;
-        margin-left: 5px;
+        
     }
     #specs{
         width: 100%;
@@ -151,7 +151,7 @@ z-index: 1;
     }
    #order{
     background: rgb(94, 122, 235);
-    margin-left: 150px;
+    margin-left: 130px;
     width: 200px;
     height: 35px;
     
@@ -166,7 +166,9 @@ z-index: 1;
     transition: 1s;
     
    }
-
+#img img{
+    margin: 0%;
+}
     
 
 }

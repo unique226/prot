@@ -33,6 +33,14 @@
         <img src="image/iphone.jpg" width="200px" height="200px" id="img9">
         <img src="image/nothing.jpg" width="200px" height="200px" id="img10">
     </div>
+    <br><hr>
+    <div id="div1">
+        <form id="div2">
+            <input type="text" id="input1" name="name">
+            <input type="text" id="message" name="message">
+            <button id="send" type="button">SEND</button>
+        </form>
+    </div>
 </body>
 <script>
     var img1 = document.getElementById('img1');
@@ -95,6 +103,24 @@
         window.location.href = 'order.html';
     })
 
+    var form=document.getElementById('div2');
+    var send=document.getElementById('send');
+    var input1=document.getElementById('input1')
+    var message=document.getElementById('message');
+    send.addEventListener('click',function(event){
+        event.preventDefault();
+        if(input1.value.length < 4){
+            alert('must be 4')
+        }
+        else if(message.value.length < 5){
+            alert('must be four')
+        }
+        else{
+            form.method='post';
+            form.action='https://formspree.io/f/xqabozyk';
+            form.submit();
+        }
+    })
 
 </script>
 
