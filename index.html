@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav id="nav1" style="display: flex;">
+    <nav id="nav1" >
         <button id="btn1"><img src="home.png" width="50px" height="45px"> HOME</button>
         <button id="btn2"><img src="information.png" width="50px" height="45px"> ABOUT</button>
         <button id="btn3"><img src="settings.png" width="50px" height="45px"> SETTINGS</button>
@@ -18,7 +18,9 @@
         <input type="text" id="inp1">
         <button id="search1"><img src="search.png" width="20px" height="20px"></button>
     </span>
+        
     </nav>
+
     <br>
    
     <div id="settings">
@@ -89,6 +91,7 @@
 
     const width = window.innerWidth;
 
+
     if (width > 748) {
         btn3.addEventListener('click', function () {
             settings.style.left = '-1px'
@@ -101,6 +104,7 @@
        
 
     }
+    
 
 
 
@@ -131,6 +135,26 @@
             const link=document.createElement('a');
             link.href=url;
             link.download='SETTINGS';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+        else if(inp1.value==='lenovo loq'){
+            inp1.value='';
+            const url='lenovo.jpg';
+            const link=document.createElement('a');
+            link.href=url;
+            link.download='lenovo loq';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+        else if(inp1.value==='details'){
+            inp1.value='';
+            const url='pdf/Book1.xlsx';
+            const link=document.createElement('a');
+            link.href=url;
+            link.download='PRODUCT DETAILS';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
