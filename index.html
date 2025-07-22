@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="shortcut icon" href="user.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="nav1" style="display: flex;">
+        <button id="btn1"><img src="home.png" width="50px" height="45px"> HOME</button>
+        <button id="btn2"><img src="information.png" width="50px" height="45px"> ABOUT</button>
+        <button id="btn3"><img src="settings.png" width="50px" height="45px"> SETTINGS</button>
+         <span id="span1">
+        <input type="text" id="inp1">
+        <button id="search1"><img src="search.png" width="20px" height="20px"></button>
+    </span>
+    </nav>
+    <br>
+   
+    <div id="settings">
+        <p style="text-align: center; align-items: center;">SEARCH BAR</p>
+
+        <span style="text-align: center; align-items: center; margin-left: 150px;">
+            <label for="power" style="font-size: 15px;">ON
+                <input type="radio" name="power" id="on1">
+            </label>
+
+            <label for="power" style="font-size: 15px;">OFF
+                <input type="radio" name="power" id="off1">
+            </label>
+        </span>
+        <br>
+        <hr>
+        <p style="text-align: center; align-items: center;">PROMOTIONS</p>
+        <span style="text-align: center; align-items: center; margin-left: 150px;">
+            <label for="power1" style="font-size: 15px;">ON
+                <input type="radio" name="power1" id="on2">
+            </label>
+
+            <label for="power1" style="font-size: 15px;">OFF
+                <input type="radio" name="power1" id="off2">
+            </label>
+        </span>
+        <br>
+        <button id="close">CLOSE</button>
+
+
+    </div>
+    <div id="promotions">
+        <div id="promo"><img src="rocket.gif" id="pro1">
+            <img src="search.png" id="pro2">
+              <img src="user.png" id="pro3">
+                <img src="phone-call.png" id="pro4">
+                  <img src="settings.png" id="pro5">
+        </div>
+    </div>
+
+    <img src="rocket.gif" width="50px" height="45px" id="sendani">
+</body>
+<script>
+    var btn1 = document.getElementById('btn1');
+    var btn2 = document.getElementById('btn2');
+    var btn3 = document.getElementById('btn3');
+    var settings = document.getElementById('settings');
+    var search1 = document.getElementById('search1');
+    var inp1=document.getElementById('inp1');
+    var span1 = document.getElementById('span1');
+    var on1 = document.getElementById('on1');
+    var off1 = document.getElementById('off1');
+    var on2 = document.getElementById('on2');
+    var off2 = document.getElementById('off2');
+    var promotions=document.getElementById('promotions');
+    var close=document.getElementById('close');
+    //settings event
+
+
+    btn3.addEventListener('click', function () {
+        settings.style.left = '-1px'
+        settings.style.marginLeft = '94px'
+    });
+      close.addEventListener('click', function () {
+        settings.style.left='500px';
+    });
+
+
+    const width = window.innerWidth;
+
+    if (width > 748) {
+        btn3.addEventListener('click', function () {
+            settings.style.left = '-1px'
+            settings.style.marginLeft = '1130px'
+        });
+        close.addEventListener('click', function () {
+            settings.style.left = '1560px'
+            
+        });
+       
+
+    }
+
+
+
+
+
+
+ //search bar event
+
+    on1.addEventListener('click', function () {
+        span1.style.display = 'block';
+    });
+    off1.addEventListener('click', function () {
+        span1.style.display = 'none';
+    });
+    //promotions
+       on2.addEventListener('click', function () {
+        promotions.style.display = 'block';
+    });
+    off2.addEventListener('click', function () {
+        promotions.style.display = 'none';
+    });
+   
+    //
+    search1.addEventListener('click',function(){
+        if(inp1.value==='settings'){
+            inp1.value='';
+            const url='settings.png';
+            const link=document.createElement('a');
+            link.href=url;
+            link.download='SETTINGS';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+        else if(inp1.value==='mainpage'){
+            window.location.href='mainpage.html';
+        }
+        else{
+            alert('no comments');
+        }
+    })
+
+
+
+
+    
+
+
+
+</script>
+
+</html>

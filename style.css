@@ -1,0 +1,354 @@
+
+
+
+
+
+@media screen and (max-width:600px){
+    #nav1{
+        width: 100%;
+        height: 100px;
+        margin: 0;
+        padding-top: 5px 10px;
+        box-shadow: 0 0 4px gray;
+    }
+    #btn1{
+        
+        height: 60px;
+        margin-left: 20px;
+        margin-top: 10px;
+        border: 0;
+        font-size: 10px;
+        background: transparent;
+        border-radius: 3px;
+    }
+    #btn2{
+        border-radius: 3px;
+        
+        height: 60px;
+        margin-left:40px;
+        margin-top: 10px;
+        border: 0;
+        font-size: 10px;
+        background: transparent;
+    }
+      
+    #btn3{
+        border-radius: 3px;
+        
+        height: 60px;
+        margin-left:100px;
+        margin-top: 10px;
+        border: 0;
+        font-size: 10px;
+        background: transparent;
+    }
+    #sendani{
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    #span1{
+        margin-top: 10px;
+        display: flex;
+        border: 0;
+        margin-left: 150px;
+        display: none;
+    
+    }
+    
+    #inp1,#search1{
+        border: 0;
+        padding: 10px ;
+        background: transparent;
+        box-shadow:  0 0 1px black;
+        border-radius: 3px;
+       
+    }
+    #search1{
+        box-shadow: 0 0 0 ;
+        margin-top: 11px;
+    }
+    
+    #settings{
+        position: fixed;
+        width: 400px;
+       height: 400px;
+        left: 600px;
+        transition: 2s;
+        border: 1px solid red;
+        z-index: 2;
+        background: whitesmoke;
+        overflow-x: auto;
+        overflow-y: hidden;
+        
+    }
+    #promotions{
+        width: 100%;
+        position:absolute;
+        height: 250px;
+        display: flex;
+        letter-spacing:50px;
+        display: none;
+z-index: 1;
+        overflow-x: auto;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+
+}
+#scdiv{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: auto;
+        
+    }
+    #scdiv img,#img img{
+        width: 400px;
+        height: 300px;
+        box-shadow: 1px 0px 1px black;
+        margin: 50px;
+        border: 1px solid navy;
+        border-radius: 5px;
+    }
+#promo{
+    width: 200px;
+}
+#pro1,#pro2,#pro3,#pro4,#pro5{
+        width: 200px;
+        height: 180px;
+        border:1px solid ;
+        border-radius: 3px;
+        box-shadow:1px 0 5px,-1px 0 5px ,0 6px  8px black;
+        
+    }
+      #holder{
+        width: 400px;
+        height: 400px;
+        
+        margin-top: 50px;
+    }
+    #div33{
+        text-align: center;
+        margin-left: 5px;
+    }
+    #specs{
+        width: 100%;
+        height: max-content;
+        max-height: 500px;
+        white-space: wrap;
+    
+        font-weight: normal;
+        font-family: 'Gill Sans',  'Trebuchet MS', sans-serif;
+        background-origin: padding-box;
+        box-sizing: border-box;
+        border-radius: 5px;
+        box-shadow: 0px 2px 4px rgb(6, 6, 6);
+        line-height: 40px;
+        gap: 20px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+   #order{
+    background: rgb(94, 122, 235);
+    margin-left: 150px;
+    width: 200px;
+    height: 35px;
+    
+    border: none;
+    border-radius: 35px 55pc 5pc;
+    transition: 1s;
+    margin-top: 20px;
+
+   }
+   #order:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    
+   }
+
+    
+
+}
+
+
+
+
+
+
+@media screen and (min-width:600px){
+    #nav1{
+        width: 100%;
+        height: 100px;
+        margin: 0;
+        padding-top: 5px 10px;
+        box-shadow: 0 0 4px gray;
+    }
+    #btn1{
+        
+        height: 60px;
+        margin-left: 20px;
+        margin-top: 10px;
+        border: 0;
+        font-size: 10px;
+        background: transparent;
+        border-radius: 3px;
+    }
+    #btn2{
+        border-radius: 3px;
+        
+        height: 60px;
+        margin-left:40px;
+        margin-top: 10px;
+        border: 0;
+        font-size: 10px;
+        background: transparent;
+    }
+      
+    #btn3{
+        border-radius: 3px;
+        
+        height: 60px;
+        margin-left:100px;
+        margin-top: 10px;
+        border: 0;
+        font-size: 10px;
+        background: transparent;
+    }
+    #sendani{
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    #span1{
+        margin-top: 10px;
+        border: 0;
+        margin-left: 190px;
+        display: none;
+        
+    
+    }
+    #inp1{
+        margin-top: 13px;
+    }
+    #inp1,#search1{
+        border: 0;
+        padding: 9px;
+        background: transparent;
+        box-shadow:  0 0 1px black;
+        border-radius: 3px;
+    
+       
+    }
+    #search1{
+        box-shadow: 0 0 2px black ;
+        margin-top: 13px;
+        padding: 5px 11px ;
+        position: absolute;
+    }
+    
+    
+     #settings{
+        position: fixed;
+        width: 400px;
+       height: 400px;
+        left:1560px;
+        transition: 2s;
+        border: 1px solid red;
+        background: whitesmoke;
+        z-index: 1;
+    }
+    #promotions{
+        width: 100%;
+        position: absolute;
+        height: 250px;
+        display: flex;
+        letter-spacing:50px;
+        display: none;
+        margin-top: 100pc;
+        
+
+    }
+    #pro1,#pro2,#pro3,#pro4,#pro5{
+        width: 200px;
+        height: 180px;
+        border:1px solid ;
+        border-radius: 3px;
+        box-shadow:1px 0 5px,-1px 0 5px ,0 6px  8px black;
+        
+    }
+    #scdiv{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: auto;
+        
+    }
+    
+   #scdiv img ,#img img{
+        width: 400px;
+        height: 300px;
+        box-shadow: 1px 0px 1px black;
+        margin: 50px;
+        border: 1px solid navy;
+        border-radius: 5px;
+    }
+    #img{
+        width: 300px;
+        height: 300px;
+        border: 1px navy;
+    }
+    #holder{
+        width: 400px;
+        height: 400px;
+        margin-left: 500px;
+        margin-top: 100px;
+    }
+    #div33{
+        text-align: center;
+        margin-left: 55px;
+    }
+    #specs{
+        width: 600px;
+        height: max-content;
+        max-height: 500px;
+        white-space: wrap;
+        margin-left: 470px;
+        font-weight: normal;
+        font-family: 'Gill Sans',  'Trebuchet MS', sans-serif;
+        background-origin: padding-box;
+        box-sizing: border-box;
+        border-radius: 5px;
+        box-shadow: 0px 2px 4px rgb(6, 6, 6);
+        line-height: 40px;
+        gap: 20px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+   #order{
+    background: rgb(94, 122, 235);
+    width: 200px;
+    height: 35px;
+    margin-left: 650px;
+    border: none;
+    border-radius: 35px 55pc 5pc;
+    transition: 1s;
+    margin-top: 20px;
+
+   }
+   #order:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    
+   }
+    
+
+    
+
+    
+
+}
+body,#inp1,#search1,#settings,#sendani,#span1{
+    border-radius: 3px;
+}

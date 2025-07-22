@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p>ELECTONICS</p>
+    <div id="scdiv">
+
+        <img src="image/electircs.jpg" width="200px" height="200px" id="img1" data="rajesh">
+
+        <img src="image/mac.jpg" width="200px" height="200px" id="img2">
+        <img src="image/microsurface.jpg" width="200px" height="200px" id="img3" title="MICROSOFT">
+        <img src="image/asustuf.jpg" width="200px" height="200px" id="img4">
+        <img src="image/lenovo.jpg" width="200px" height="200px" id="img5">
+
+
+    </div>
+    <br>
+    <hr>
+    <div id="scdiv">
+
+        <img src="image/glpx.jpg" width="200px" height="200px" id="img6" data="rajesh">
+
+        <img src="image/one+1.jpg" width="200px" height="200px" id="img7">
+        <img src="image/oppo.jpg" width="300px" height="200px" id="img8" title="MICROSOFT">
+        <img src="image/iphone.jpg" width="200px" height="200px" id="img9">
+        <img src="image/nothing.jpg" width="200px" height="200px" id="img10">
+    </div>
+</body>
+<script>
+    var img1 = document.getElementById('img1');
+    var img2 = document.getElementById('img2');
+    var img3 = document.getElementById('img3');
+    var img4 = document.getElementById('img4');
+    var img5 = document.getElementById('img5');
+    var img6 = document.getElementById('img6');
+    var img7 = document.getElementById('img7');
+    var img8 = document.getElementById('img8');
+    var img9 = document.getElementById('img9');
+    var img10 = document.getElementById('img10');
+
+
+    img1.addEventListener('click', function () {
+        localStorage.setItem('img1', 'ELECTRONICS');
+        window.location.href = 'order.html';
+    })
+
+    img2.addEventListener('click', function () {
+        localStorage.setItem('img1', 'MAC BOOK');
+        window.location.href = 'order.html';
+    })
+
+    img3.addEventListener('click', function () {
+        localStorage.setItem('img1', 'MICROSURFACE');
+        window.location.href = 'order.html';
+    })
+    img4.addEventListener('click', function () {
+        localStorage.setItem('img1', 'ASUS TUF');
+        window.location.href = 'order.html';
+    })
+
+    img5.addEventListener('click', function () {
+        localStorage.setItem('img1', 'LENOVO LOQ');
+        window.location.href = 'order.html';
+    })
+    //phones
+     img6.addEventListener('click', function () {
+        localStorage.setItem('img1', 'PIXEL');
+        window.location.href = 'order.html';
+    })
+
+    img7.addEventListener('click', function () {
+        localStorage.setItem('img1', 'ONEPLUS');
+        window.location.href = 'order.html';
+    })
+
+    img8.addEventListener('click', function () {
+        localStorage.setItem('img1', 'OPPO');
+        window.location.href = 'order.html';
+    })
+    img9.addEventListener('click', function () {
+        localStorage.setItem('img1', 'IPHONE');
+        window.location.href = 'order.html';
+    })
+
+    img10.addEventListener('click', function () {
+        localStorage.setItem('img1', 'NOTHING');
+        window.location.href = 'order.html';
+    })
+
+
+</script>
+
+</html>

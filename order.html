@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="holder">
+        <div id="div33">
+
+        </div>
+        <div id="img"></div>
+    </div>
+    <div id="specs"></div>
+    <button id="order">ORDER</button>
+</body>
+<script>
+    var div33 = document.getElementById('div33');
+    var div32 = document.getElementById('img');
+    var specs = document.getElementById('specs');
+
+    const img1 = localStorage.getItem('img1');
+
+    if (img1 === 'ELECTRONICS') {
+        div33.innerHTML = 'COST OF' + img1 + '  =  550';
+        div32.innerHTML = "<img src='image/electircs.jpg'>";
+        specs.innerHTML = 'ALL THE ELECTRIC APPLINECES WILL WE COMES WITH THESE. 1 YEAR WARRANTY';
+    }
+    else if (img1 === 'MAC BOOK') {
+        div33.innerHTML = 'COST OF' + img1 + '  =  90000';
+        div32.innerHTML = "<img src='image/mac.jpg'>";
+        specs.innerHTML = 'THIS LAPTOP IS MADE BY AN APPLE.THIS HAS M2 CHIP.DEDICATED GRAPHICS CARD COMES WITH THERE.8GB RAM,512GB SSD.1Y WARRANTY'
+    }
+    else if (img1 === 'MICROSURFACE') {
+        div33.innerHTML = 'COST OF' + img1 + '  =  120000';
+        div32.innerHTML = "<img src='image/microsurface.jpg'>";
+        specs.innerHTML='THIS PRODUCT IS MADE BY AN MICROSOFT.THIS HAR INTEL 7HS CHIPSET.12GB RAM,512 SSD.2Y WARRANTY';
+    }
+    else if (img1 === 'ASUS TUF') {
+        div33.innerHTML = 'COST OF' + img1 + '  =  60000';
+        div32.innerHTML = "<img src='image/asustuf.jpg'>";
+        specs.innerHTML='THIS PRODUCT IS BY AN ASUS ROG.THIS COMES WITH AMD RYZEN7 7435HS CHIPSET.16GB RAM 512 SSD ,RTX 2050 DGC.1 Y WARRANTY';
+    }
+    else if (img1 === 'LENOVO LOQ') {
+        div33.innerHTML = 'COST OF' + img1 + '  =  68000';
+        div32.innerHTML = "<img src='image/lenovo.jpg'>";
+        specs.innerHTML='THIS IS MADE BY AN LENOVO.THIS COMES WITH AMD RYNZEN 5 CHIP OR INTEL 5.12GB RAM 1TB SDD.RTX 3050 DGC.1Y WARRANTY';
+    }
+
+    else {
+        div33.innerHTML = 'no';
+        div32.innerHTML='NO IMAGES'
+        specs.innerHTML='no specs';
+    }
+    /*for mobiles*/
+    if (img1 === 'PIXEL') {
+        div33.innerHTML = 'COST OF' + img1 + '  =  55500';
+        div32.innerHTML = "<img src='image/glpx.jpg'>";
+        specs.innerHTML='THIS IS MADE BY GOOGLE.12GB RAM ,512 ROM.SNAPDRAGON 8S GEN3';
+    }
+    else if (img1 === 'ONEPLUS') {
+        div33.innerHTML = 'COST OF' + img1 + '  =  40000';
+        div32.innerHTML = "<img src='image/one+1.jpg'>";
+        specs.innerHTML='this is made my one plus.12gb,256.mediadex 7050';
+    }
+    else if (img1 === 'OPPO') {
+        div33.innerHTML = 'COST OF' + img1 + '  =  26000';
+        div32.innerHTML = "<img src='image/oppo.jpg'>";
+        specs.innerHTML='this is made by oppo.8,256gb.mediadek 5055';
+    }
+    else if (img1 === 'IPHONE') {
+        div33.innerHTML = 'COST OF' + img1 + '  =  120000';
+        div32.innerHTML = "<img src='image/iphone.jpg'>";
+        specs.innerHTML='this is made by apple.12gb,1tb.air 15 chip';
+    }
+    else if (img1 === 'NOTHING') {
+        div33.innerHTML = 'COST OF' + img1 + '  =  30000';
+        div32.innerHTML = "<img src='image/nothing.jpg'>";
+        specs.innerHTML='this is made by nothing.8gb,256gb.snapdragon 8s gen3';
+    }
+
+
+    var order = document.getElementById('order');
+    order.addEventListener('click', function () {
+        alert(img1 + 'order is placed')
+    })
+</script>
+
+</html>
