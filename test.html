@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="s.css">
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+<script>
+    let div1=document.getElementById('div1');
+    const vlauee=localStorage.getItem('img1') ||'no img';
+     const caret=localStorage.getItem('cart') ||'no';
+     div1.innerHTML=vlauee+':'+caret;
+</script>
+</html>

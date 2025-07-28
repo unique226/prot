@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <div class="cart" >
+
+    </div>
     <div id="holder">
         <div id="div33">
 
@@ -16,14 +19,18 @@
         <div id="img"></div>
     </div>
     <div id="specs"></div>
+    <button id="cart">ADD</button>
     <button id="order">ORDER</button>
+    
 </body>
 <script>
     var div33 = document.getElementById('div33');
     var div32 = document.getElementById('img');
     var specs = document.getElementById('specs');
-
+    let cart=document.getElementById('cart');
+    let cartt=document.querySelector('.cart');
     const img1 = localStorage.getItem('img1');
+    
 
     if (img1 === 'ELECTRONICS') {
         div33.innerHTML = 'COST OF' + img1 + '  =  550';
@@ -84,10 +91,21 @@
     }
 
 
-    var order = document.getElementById('order');
+  
+    const carts=[1];
+    cart.addEventListener('click',function(){
+         carts[0] +=1;
+         cartt.innerHTML=carts[0]
+    })  
+      var order = document.getElementById('order');
     order.addEventListener('click', function () {
-        alert(img1 + 'order is placed')
+      
+        localStorage.setItem('cart',cartt.innerHTML);
+        
+        window.location.href='test.html';
+
     })
+cartt.innerHTML='1';
 </script>
 
 </html>
