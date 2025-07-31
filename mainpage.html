@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head >
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>products
@@ -16,6 +17,9 @@
 </head>
 
 <body>
+    <span style="width: 100%;
+    height: max-content; white-space: wrap;" lang="tamil">இதில் காட்ட படும் பொருள் எதையும் வாங்க முடியாது.இது பயிற்ச்சி தலம்</span>
+<div id="page1">
     <p>ELECTONICS</p>
     <div id="scdiv">
 
@@ -39,10 +43,22 @@
         <img src="image/iphone.jpg" width="200px" height="200px" id="img9">
         <img src="image/nothing.jpg" width="200px" height="200px" id="img10">
     </div>
-    <br>
-    <div id="cart">
+    <hr>
+    <br>  <div id="scdiv">
+
+        <img src="image/portalps.jpg" width="200px" height="200px" id="img11" data="rajesh">
+
+        <img src="image/ps2.jpg" width="200px" height="200px" id="img12">
+        <img src="image/ps3.jpg" width="300px" height="200px" id="img13" title="soony">
+        <img src="image/ps4.jpg" width="200px" height="200px" id="img14">
+        <img src="image/ps5.jpg" width="200px" height="200px" id="img15">
     
-    </div>
+        </div>
+</div>
+
+    <button  id="caret">
+    button
+    </button>
     <hr>
     <div id="div1">
         <form id="div2"><p style="text-align: center; font-family: 'Oi',serif; font-weight: 400; font-size: 20px;">
@@ -52,6 +68,7 @@
             <input type="text" id="message" name="message" placeholder="MESSAGE">
             <button id="send" type="button">SEND</button>
         </form>
+        <span style="width: 100%; height: max-content; white-space: wrap;" id="spanmessage">இதன் முலம் உன்களது கருத்து கலை தெருவ்விக்கலாம். </span>
     </div>
 </body>
 <script>
@@ -65,6 +82,12 @@
     var img8 = document.getElementById('img8');
     var img9 = document.getElementById('img9');
     var img10 = document.getElementById('img10');
+    
+    var img11 = document.getElementById('img11');
+    var img12 = document.getElementById('img12');
+    var img13 = document.getElementById('img13');
+    var img14 = document.getElementById('img14');
+    var img15 = document.getElementById('img15');
 
 
     img1.addEventListener('click', function () {
@@ -114,6 +137,32 @@
         localStorage.setItem('img1', 'NOTHING');
         window.location.href = 'order.html';
     })
+    //nec=xt10
+    img11.addEventListener('click',function(){
+        localStorage.setItem('img1','psportal');
+        window.location.href='order.html';
+    })
+    img12.addEventListener('click',function(){
+        localStorage.setItem('img1','ps2');
+        window.location.href='order.html';
+    })
+    img13.addEventListener('click',function(){
+        localStorage.setItem('img1','ps3');
+        window.location.href='order.html';
+    })
+     img14.addEventListener('click',function(){
+        localStorage.setItem('img1','ps4');
+        window.location.href='order.html';
+    })
+    
+ img15.addEventListener('click',function(){
+        localStorage.setItem('img1','ps5');
+        window.location.href='order.html';
+    })
+    
+
+    
+
 
     var form=document.getElementById('div2');
     var send=document.getElementById('send');
@@ -133,7 +182,18 @@
             form.submit();
         }
     })
+    let caret=document.getElementById('caret');
+    let page1=document.getElementById('page1');
+    caret.addEventListener('click',function(){
+        caret.innerHTML='page2';
+        if(caret.innerHTML==='page2'){
+            page1.style.display='none';
 
+        }
+        else{
+            alert('none');
+        }
+    });
 </script>
 
 </html>

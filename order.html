@@ -21,6 +21,7 @@
     <div id="specs"></div>
     <button id="cart">ADD</button>
     <button id="order">ORDER</button>
+    <button id="back">BACK</button>
     
 </body>
 <script>
@@ -90,7 +91,32 @@
         specs.innerHTML='this is made by nothing.8gb,256gb.snapdragon 8s gen3';
     }
 
-
+//consoolse
+if(img1 === 'psportal'){
+    div33.innerHTML='COST OF'+ img1 + ' = 3500';
+    div32.innerHTML="<img src='image/portalps.jpg'>";
+    specs.innerHTML='THIS IS MADE BY AN SONY';
+}
+else if(img1 === 'ps2'){
+    div33.innerHTML='COST OF'+ img1 + ' = 5500';
+    div32.innerHTML="<img src='image/ps2.jpg'>";
+    specs.innerHTML='THIS IS MADE BY AN SONY';
+}
+else if(img1 === 'ps3'){
+    div33.innerHTML='COST OF'+ img1 + ' = 13500';
+    div32.innerHTML="<img src='image/ps3.jpg'>";
+    specs.innerHTML='THIS IS MADE BY AN SONY';
+}
+else if(img1 === 'ps4'){
+    div33.innerHTML='COST OF'+ img1 + ' = 24500';
+    div32.innerHTML="<img src='image/ps4.jpg'>";
+    specs.innerHTML='THIS IS MADE BY AN SONY';
+}
+else if(img1 === 'ps5'){
+    div33.innerHTML='COST OF'+ img1 + ' = 53500';
+    div32.innerHTML="<img src='image/ps5.jpg'>";
+    specs.innerHTML='THIS IS MADE BY AN SONY';
+}
   
     const carts=[1];
     cart.addEventListener('click',function(){
@@ -106,6 +132,10 @@
 
     })
 cartt.innerHTML='1';
+let back=document.getElementById('back');
+back.addEventListener('click',function(){
+    window.location.href='mainpage.html';
+});
 </script>
 
 </html>
